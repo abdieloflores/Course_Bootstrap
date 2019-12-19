@@ -1,4 +1,7 @@
 body {
   color: grey; }
 
+.row > * {
+  border: 3 px solid grey; }
+
 /*# sourceMappingURL=styles.css.map */
