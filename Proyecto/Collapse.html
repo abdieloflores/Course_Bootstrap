@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" ">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <section class="container">
+      <div class="row p-4 justify-content-center">
+        <article class="col-sm-8">
+          
+          <div class="border shadow-sm p-4 text-center">
+            <h1>Servicios</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <!-- Para convertir un elemento en disparador para el collapso se le agrega data-toggle="colapse" para mencionar quien es el disparador y data-target="#id" para el que lo va a recibir -->
+
+            <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#texto1" aria-expanded="false" aria-cotrols="texto1">Ver Documentación</button>
+
+            <div class="collapse" id="texto1">
+            <div class="my-3 p-3 rounded bg-info text-white text-left">
+              <h3>Pasos para inscribirse</h3>
+              <ol>
+                <li>Iniciar Sesión</li>
+                <li>Ir a Panel de Control</li>
+                <li>Descargar Fichas</li>
+              </ol>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-center">
+
+                  <button type="submit" class="btn btn-light" data-toggle="collapse" data-target="#texto1" aria-expanded="false">Cerrar_1</button>
+
+                  <a class="btn btn-light" data-toggle="collapse" href="#texto1" aria-expanded="false">Cerrar_2</a>
+
+                  <!-- Si vamos a usar un botton pero en un enlace hay que agregar role = "button" para que los lectores de pantalla los identifiquen como botones -->
+              </p>  
+            </div>
+          </div>
+          
+          </div>
+
+        </<article>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+  </body>
+</html>

@@ -1,7 +1,13 @@
 @charset "UTF-8";
-/*----------------------------------------
-SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
-------------------------------------------*/
+/*-----------------------------
+       PATRON DE COLORES
+--------------------------------*/
+/*-----------------------------
+SOBREINCRIBIENDO ESTILO DE BOOTSTRAP
+--------------------------------*/
+body {
+  color: #3f3f3f; }
+
 .bg-primary {
   background-color: #ff401c !important; }
 
@@ -9,40 +15,35 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
   color: #ff401c !important; }
 
 .btn-primary {
-  background-color: #ff401c !important;
+  color: #fff;
+  background-color: #ff401c;
+  border-color: #e82500 !important; }
+
+.btn-primary:hover {
+  background-color: #e82500 !important;
   border-color: #b51d00 !important; }
 
-.btn-primary:hover,
 .btn-primary:focus {
-  background-color: #e82500 !important; }
+  background-color: #e82500 !important;
+  border-color: #b51d00 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5); }
 
 .btn-primary:active {
-  background-color: #b51d00 !important;
+  background-color: #821500 !important;
   border-color: #821500 !important; }
 
-.btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important;
-          box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important; }
-
-/*--------------------------
-ESTILOS DEL DISEÑO
----------------------------*/
-html {
+/*-----------------------------
+       ESTILOS DEL DISEÑO
+--------------------------------*/
+@media (max-width: 768px) {
+  html {
+    font-size: 13px; } }
+footer {
   font-size: 13px; }
 
-body {
-  color: #44484a;
-  font-family: 'Open Sans', sans-serif; }
-
 .card:hover {
-  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
-          box-shadow: 0 0 10px #0c0c0c3b; }
-
-/*------------------------
-SHOW DE LOS MEDIAS QUERIES
-------------------------*/
-@media (min-width: 768px) {
-  html {
-    font-size: 16px; } }
+  -webkit-box-shadow: 0 0 10px #00000040;
+          box-shadow: 0 0 10px #00000040; }
 
 /*# sourceMappingURL=estilos.css.map */

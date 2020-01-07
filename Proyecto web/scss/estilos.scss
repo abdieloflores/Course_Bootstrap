@@ -1,58 +1,57 @@
-//--------------------------------------
-// 			PATRON DE COLORES
-//--------------------------------------
-$principal:#ff401c;
-$texto:#44484a;
+/*-----------------------------
+       PATRON DE COLORES
+--------------------------------*/
+$primary: #ff401c;
+$texto: #3f3f3f;
 
-/*----------------------------------------
-SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
-------------------------------------------*/
-.bg-primary {
-	background-color: $principal !important;
+/*-----------------------------
+SOBREINCRIBIENDO ESTILO DE BOOTSTRAP
+--------------------------------*/
+body{
+	color:$texto;
 }
+.bg-primary {
+    background-color: $primary!important;
+}
+
 .text-primary {
-	color: $principal !important;
+    color: $primary!important;
 }
 
 .btn-primary {
-	background-color:$principal !important;
-	border-color: darken($principal,20%) !important;
-}
-.btn-primary:hover,
-.btn-primary:focus {
-	background-color:darken($principal,10%) !important;
-}
-.btn-primary:active {
-	background-color:darken($principal,20%) !important;
-	border-color: darken($principal,30%) !important;
-}
-.btn-primary:focus {
-	box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+    color: #fff;
+    background-color: $primary;
+    border-color: darken($primary,10%) !important;
 }
 
-/*--------------------------
-ESTILOS DEL DISEÑO
----------------------------*/
-html{
-	font-size: 13px;	
+.btn-primary:hover{
+    background-color: darken($primary,10%) !important;
+    border-color: darken($primary,20%) !important;
 }
-body{
-	color:$texto;
-	font-family: 'Open Sans', sans-serif;
+
+.btn-primary:focus {
+    background-color: darken($primary,10%) !important;
+    border-color: darken($primary,20%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($primary,.5);
+}
+.btn-primary:active{
+    background-color: darken($primary,30%) !important;
+    border-color: darken($primary,30%) !important;
+}
+
+/*-----------------------------
+       ESTILOS DEL DISEÑO
+--------------------------------*/
+@media(max-width: 768px){
+	html{
+		font-size: 13px;
+	}
+}
+
+footer{
+	font-size: 13px;
 }
 
 .card:hover{
-	box-shadow: 0 0 10px #0c0c0c3b;
-
-}
-
-/*------------------------
-SHOW DE LOS MEDIAS QUERIES
-------------------------*/
-
-@media (min-width: 768px){
-	html{
-		font-size: 16px;	
-	}
-
+	box-shadow: 0 0 10px #00000040;
 }
